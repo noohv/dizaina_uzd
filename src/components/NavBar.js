@@ -1,27 +1,38 @@
 
 import "../App.css"
 import hambuger from"../items/menu.svg"
+import { Link } from 'react-router-dom';
+import { LANGUAGES } from "../constants";
 
-export function NavBar() {
+
+export function NavBar({langauge, setLanguage}) {
+
+
+
   return (
-    <nav role="navigation">
-        <div id="menuToggle">
-            <input type="checkbox" />
-
-            <div id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-
-            <ul id="menu">
-            <a href="#"><li>Home</li></a>
-            <a href="#"><li>About</li></a>
-            <a href="#"><li>Info</li></a>
-            <a href="#"><li>Contact</li></a>
-            <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
-            </ul>
-        </div>
+    <nav class="header">
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/road">Road</Link></li>
+            <li><Link to="/road#liepaja">Liepaja</Link></li>
+            <li><Link to="/road#grobina">Grobina</Link></li>
+            <li><a href="#contact">Tris</a></li>
+            <li><a href="#contact">Cetri</a></li>
+            <li><a href="#contact">Pieci</a></li>
+            <li><a href="#contact">Sesi</a></li>
+            <li><a href="#contact">Septini</a></li>
+            <li>
+                <select defaultValue={"es"}>
+                    {LANGUAGES.map(({ code, label }) => (
+                    <option key={code} value={code}>
+                        {label}
+                    </option>
+                    ))}
+                </select>
+            </li>
+        </ul>
     </nav>
   )
 }
