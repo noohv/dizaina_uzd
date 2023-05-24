@@ -43,7 +43,6 @@ a {
 /* menu */
 
 .menu-language { 
-  display: none;
   float: right;
 }
 
@@ -122,11 +121,6 @@ a {
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
-
-.header .menu-btn:checked ~ .menu-language {
-  display: block;
-}
-
 
 /* Utilities */
 
@@ -219,9 +213,9 @@ a {
 /* About me */
 
 .about .grid {
-  grid-template-columns: 1.5fr 1fr 2fr;
+  grid-template-columns: 1fr 3fr;
   height: 100%;
-  gap: 50px;
+  gap: 0;
   margin: 100px 0;
 }
 

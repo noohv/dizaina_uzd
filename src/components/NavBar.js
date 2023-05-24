@@ -23,7 +23,7 @@ export function NavBar({language, setLanguage}) {
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label>
         <div className="menu-language">
-          <button onClick={clickHandler}>{language == "en" ? "LV" : "ENG"}</button>
+          <button onClick={clickHandler}>{language == "en" ? "🇱🇻" : "ENG"}</button>
         </div>
 
         <ul className="menu">
@@ -33,9 +33,9 @@ export function NavBar({language, setLanguage}) {
             <li><Link to="/road/grobina">{language === "en" ? TEXTS.en.grobina : TEXTS.lv.grobina}</Link></li>
             <li><Link to="/road/saldus">{language === "en" ? TEXTS.en.saldus : TEXTS.lv.saldus}</Link></li>
             <li><Link to="/road/riga">{language === "en" ? TEXTS.en.riga : TEXTS.lv.riga}</Link></li>
-            <li><Link to="/road/tramvajs">Tramvajs</Link></li>
-            <li><Link to="/road/biblioteka">Bibliotēka</Link></li>
-            <li><Link to="/road/universitate">Universitāte</Link></li>
+            <li><Link to="/road/tramvajs">{language === "en" ? TEXTS.en.tram : TEXTS.lv.tram}</Link></li>
+            <li><Link to="/road/biblioteka">{language === "en" ? TEXTS.en.library : TEXTS.lv.library}</Link></li>
+            <li><Link to="/road/universitate">{language === "en" ? TEXTS.en.university : TEXTS.lv.university}</Link></li>
         </ul>
     </nav>
   )
