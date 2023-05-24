@@ -42,6 +42,11 @@ a {
 
 /* menu */
 
+.menu-language { 
+  display: none;
+  float: right;
+}
+
 .header .menu {
   clear: both;
   max-height: 0;
@@ -118,6 +123,10 @@ a {
   top: 0;
 }
 
+.header .menu-btn:checked ~ .menu-language {
+  display: block;
+}
+
 
 /* Utilities */
 
@@ -164,6 +173,10 @@ a {
   font-size: 4rem;
 }
 
+.xxl {
+  font-size: 5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -172,8 +185,7 @@ a {
   text-align: left;
 }
 
-
-
+/* ------------------------------------------------------------------------- */
 /* Main Page */
 
 .mainPage { 
@@ -218,6 +230,8 @@ a {
   width: 100%;
 }
 
+
+/* ------------------------------------------------------------------------- */
 /* Road Page */
 
 .roadPage {
@@ -241,18 +255,26 @@ a {
   padding-top: 40px;
 }
 
+.liepaja-text .grid { 
+  grid-template-columns: 1fr 2fr;
+}
+
 /* Grobina */
 
 .grobina .grid {
   grid-template-columns: 1fr 2fr;
   height: 100%;
   gap: 50px;
-  margin: 100px 0;
+  margin: 10px 0;
 }
 
 .grobina img {
   height: auto;
   width: 100%;
+}
+
+.grobina-text .grid { 
+  grid-template-columns: 1fr 2fr;
 }
 
 /* Saldus */
@@ -265,7 +287,7 @@ a {
   grid-template-columns: 1fr 2fr;
   height: 100%;
   gap: 50px;
-  margin: 100px 0;
+  margin: 10px 0;
 }
 
 .saldus img {
@@ -273,12 +295,17 @@ a {
   width: 100%;
 }
 
+.saldus-text .grid { 
+  grid-template-columns: 1fr 2fr;
+}
+
 /* Rīga */
+
 .riga .grid {
   grid-template-columns: 1fr 2fr;
   height: 100%;
   gap: 50px;
-  margin: 100px 0;
+  margin: 10px 0;
 }
 
 .riga img {
@@ -286,6 +313,66 @@ a {
   width: 100%;
 }
 
+.riga-text .grid { 
+  grid-template-columns: 1fr 2fr;
+}
+
+/* Tramvajs */
+
+.tramvajs .grid {
+  grid-template-columns: 1fr 2fr;
+  height: 100%;
+  gap: 50px;
+  margin: 10px 0;
+}
+
+.tramvajs img {
+  height: auto;
+  width: 100%;
+}
+
+.tramvajs-text .grid { 
+  grid-template-columns: 1fr 2fr;
+}
+
+/* Biblioteka */
+
+.biblioteka .grid {
+  grid-template-columns: 1fr 2fr;
+  height: 100%;
+  gap: 50px;
+  margin: 10px 0;
+}
+
+.biblioteka img {
+  height: auto;
+  width: 100%;
+}
+
+.biblioteka-text .grid { 
+  grid-template-columns: 1fr 2fr;
+}
+
+/* Universitate */
+
+.universitate .grid {
+  grid-template-columns: 1fr 2fr;
+  height: 100%;
+  gap: 50px;
+  margin: 10px 0;
+}
+
+.universitate img {
+  height: auto;
+  width: 100%;
+}
+
+.universitate-text .grid { 
+  grid-template-columns: 1fr 2fr;
+}
+
+
+/* ------------------------------------------------------------------------- */
 /* Footer */
 footer {
   width: 100%;
@@ -308,6 +395,17 @@ footer {
   }  
 }
 
+@media (max-width: 1050px) {
+  .latvia .grid {
+    grid-template-columns: 1fr 2fr;
+    overflow: hidden;
+  }
+
+  .latvia .xxl {
+    font-size: 4rem;
+  }
+}
+
 /* Tablets and under */
 @media (max-width: 768px) {
   .grid,
@@ -315,15 +413,23 @@ footer {
   .latvia-text .grid,
   .about .grid,
   .grobina .grid,
-  .saldus .grid {
+  .saldus .grid,
+  .riga .grid,
+  .tramvajs .grid,
+  .biblioteka .grid,
+  .universitate .grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     padding-top: 60px;
   }
 
   .latvia .grid {
-    grid-template-rows: 1fr 1.5fr;
+    grid-template-rows: 1fr 3fr;
     gap: 0;
+  }
+
+  .latvia .xxl {
+    font-size: 3rem;
   }
 
   .latvia-text .grid {
