@@ -33,11 +33,11 @@ export function NavBar({language, setLanguage}) {
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label>
         <div className="menu-language">
-            <div class="switch">
-                <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox" checked={checked} onChange={clickHandler} />
-                <label for="language-toggle"></label>
-                <span class="on">LV</span>
-                <span class="off">EN</span>
+            <div className="switch">
+                <input id="language-toggle" className="check-toggle check-toggle-round-flat" type="checkbox" checked={checked} onChange={clickHandler} />
+                <label htmlFor="language-toggle"></label>
+                <span className="on">LV</span>
+                <span className="off">EN</span>
             </div>
         </div>
 

@@ -8,6 +8,12 @@ a {
   color: #ffffff;
 }
 
+p {
+  font-size: 18px;
+}
+.grid a {
+  color: blue;
+}
 
 .switch {
   position: relative;
@@ -17,7 +23,7 @@ a {
 
 .switch > span {
   position: absolute;
-  top: 14px;
+  top: 11px;
   pointer-events: none;
   font-weight: bold;
   font-size: 12px;
@@ -306,7 +312,8 @@ input.check-toggle-round-flat:checked + label:after {
   grid-template-columns: 1fr 2fr;
   height: 100%;
   gap: 50px;
-  margin: 100px 0;
+  margin-top: 100px;
+  margin-bottom: 130px;
 }
 
 /* About me */
@@ -353,7 +360,8 @@ input.check-toggle-round-flat:checked + label:after {
   grid-template-columns: 1fr 2fr;
   height: 100%;
   gap: 50px;
-  margin: 100px 0;
+  margin-top: 100px;
+  margin-bottom: 130px;
 }
 
 /* Grobina */
@@ -374,7 +382,8 @@ input.check-toggle-round-flat:checked + label:after {
   grid-template-columns: 1fr 2fr;
   height: 100%;
   gap: 50px;
-  margin: 100px 0;
+  margin-top: 100px;
+  margin-bottom: 130px;
 }
 
 /* Saldus */
@@ -399,7 +408,8 @@ input.check-toggle-round-flat:checked + label:after {
   grid-template-columns: 1fr 2fr;
   height: 100%;
   gap: 50px;
-  margin: 100px 0;
+  margin-top: 100px;
+  margin-bottom: 130px;
 }
 
 /* Rīga */
@@ -420,7 +430,8 @@ input.check-toggle-round-flat:checked + label:after {
   grid-template-columns: 1fr 2fr;
   height: 100%;
   gap: 50px;
-  margin: 100px 0;
+  margin-top: 100px;
+  margin-bottom: 130px;
 }
 
 /* Tramvajs */
@@ -441,7 +452,8 @@ input.check-toggle-round-flat:checked + label:after {
   grid-template-columns: 1fr 2fr;
   height: 100%;
   gap: 50px;
-  margin: 100px 0;
+  margin-top: 100px;
+  margin-bottom: 130px;
 }
 
 /* Biblioteka */
@@ -462,7 +474,8 @@ input.check-toggle-round-flat:checked + label:after {
   grid-template-columns: 1fr 2fr;
   height: 100%;
   gap: 50px;
-  margin: 100px 0;
+  margin-top: 100px;
+  margin-bottom: 130px;
 }
 
 /* Universitate */

@@ -19,7 +19,9 @@ function Road({language, id}) {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' })
     }
-  }, [id]);
+    document.title = language === "en" ? "Road checkpoints" : "Ceļa punkti"
+
+  }, [id, language]);
 
 
   return (
@@ -38,7 +40,8 @@ function Road({language, id}) {
           </div>
 
           <div className="text-left">
-            <p>{language === "en" ? TEXTS.en.liepajaText : TEXTS.lv.liepajaText}</p>
+            <p>{language === "en" ? TEXTS.en.liepajaText1 : TEXTS.lv.liepajaText1}</p>
+            <p>{language === "en" ? TEXTS.en.liepajaText2 : TEXTS.lv.liepajaText2}</p>
           </div>
         </div>
       </section>
@@ -58,7 +61,8 @@ function Road({language, id}) {
                 <h1 className="md">{language === "en" ? TEXTS.en.grobinaTextTitle : TEXTS.lv.grobinaTextTitle}</h1>
             </div>
             <div className="text-left">
-            <p>{language === "en" ? TEXTS.en.grobinaText : TEXTS.lv.grobinaText}</p>
+            <p>{language === "en" ? TEXTS.en.grobinaText1 : TEXTS.lv.grobinaText1}</p>
+            <p>{language === "en" ? TEXTS.en.grobinaText2 : TEXTS.lv.grobinaText2}</p>
             </div>
         </div>
       </section>
@@ -78,7 +82,8 @@ function Road({language, id}) {
                 <h1 className="md">{language === "en" ? TEXTS.en.halfWay : TEXTS.lv.halfWay}</h1>
             </div>
             <div className="text-left">
-            <p>{language === "en" ? TEXTS.en.saldusText : TEXTS.lv.saldusText}</p>
+            <p>{language === "en" ? TEXTS.en.saldusText1 : TEXTS.lv.saldusText1}</p>
+            <p>{language === "en" ? TEXTS.en.saldusText2 : TEXTS.lv.saldusText2}</p>
             </div>
         </div>
       </section>
@@ -138,7 +143,9 @@ function Road({language, id}) {
                 <h1 className="md">{language === "en" ? TEXTS.en.biblTextTitle : TEXTS.lv.biblTextTitle}</h1>
             </div>
             <div className="text-left">
-            <p>{language === "en" ? TEXTS.en.libraryText : TEXTS.lv.libraryText}</p>
+            <p>{language === "en" ? TEXTS.en.libraryText1 : TEXTS.lv.libraryText1}</p>
+            <p>{language === "en" ? TEXTS.en.libraryText2 : TEXTS.lv.libraryText2}</p>
+            <p>{language === "en" ? TEXTS.en.libraryText3 : TEXTS.lv.libraryText3}</p>
             </div>
         </div>
       </section>

@@ -20,7 +20,7 @@ function App() {
     <>
       <NavBar language={language} setLanguage={setLanguage} />
       <Routes>
-          <Route path="/" element={<MainPage language={language} />} />
+          <Route path="/" element={<MainPage language={language} id="home" />} />
           <Route path="/road" element={<Road language={language} id="road" />} />
           <Route path="/road/liepaja" element={<Road language={language} id="liepaja" />} />
           <Route path="/road/grobina" element={<Road language={language} id="grobina" />} />
