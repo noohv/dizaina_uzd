@@ -19,7 +19,7 @@ function MainPage({language}) {
       <section className="latvia-text">
         <div className="container grid">
             <div className="text-center">
-                <h1 className="lg">{language === "en" ? TEXTS.en.aboutWebsiteTitle : TEXTS.lv.aboutWebsiteTitle}</h1>
+                <h1 className="md">{language === "en" ? TEXTS.en.aboutWebsiteTitle : TEXTS.lv.aboutWebsiteTitle}</h1>
             </div>
             <div className="text-left">
                 <p>{language === "en" ? TEXTS.en.latviaText : TEXTS.lv.latviaText}</p>
@@ -31,7 +31,7 @@ function MainPage({language}) {
         <div className="container grid">
             <img src={portrait} alt={language === "en" ? TEXTS.en.altPortrait : TEXTS.lv.altPortrait} />
             <div className="text-center">
-                <h1 className="lg">Valters Hūns</h1>
+                <h1 className="md">Valters Hūns</h1>
             </div>
         </div>
       </section>

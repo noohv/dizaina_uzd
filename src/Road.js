@@ -34,7 +34,7 @@ function Road({language, id}) {
       <section className="liepaja-text">
         <div className="container grid">
           <div className="text-center">
-            <h1 className="lg">{language === "en" ? TEXTS.en.driveStart : TEXTS.lv.driveStart}</h1>
+            <h1 className="md">{language === "en" ? TEXTS.en.driveStart : TEXTS.lv.driveStart}</h1>
           </div>
 
           <div className="text-left">
@@ -55,7 +55,7 @@ function Road({language, id}) {
       <section className="grobina-text">
         <div className="container grid">
             <div className="text-center">
-                <h1 className="lg">{language === "en" ? TEXTS.en.grobinaTextTitle : TEXTS.lv.grobinaTextTitle}</h1>
+                <h1 className="md">{language === "en" ? TEXTS.en.grobinaTextTitle : TEXTS.lv.grobinaTextTitle}</h1>
             </div>
             <div className="text-left">
             <p>{language === "en" ? TEXTS.en.grobinaText : TEXTS.lv.grobinaText}</p>
@@ -75,7 +75,7 @@ function Road({language, id}) {
       <section className="saldus-text">
         <div className="container grid">
             <div className="text-center">
-                <h1 className="lg">{language === "en" ? TEXTS.en.halfWay : TEXTS.lv.halfWay}</h1>
+                <h1 className="md">{language === "en" ? TEXTS.en.halfWay : TEXTS.lv.halfWay}</h1>
             </div>
             <div className="text-left">
             <p>{language === "en" ? TEXTS.en.saldusText : TEXTS.lv.saldusText}</p>
@@ -95,7 +95,7 @@ function Road({language, id}) {
       <section className="riga-text">
         <div className="container grid">
             <div className="text-center">
-                <h1 className="lg">{language === "en" ? TEXTS.en.closerDestination : TEXTS.lv.closerDestination}</h1>
+                <h1 className="md">{language === "en" ? TEXTS.en.closerDestination : TEXTS.lv.closerDestination}</h1>
             </div>
             <div className="text-left">
             <p>{language === "en" ? TEXTS.en.rigaText : TEXTS.lv.rigaText}</p>
@@ -115,7 +115,7 @@ function Road({language, id}) {
       <section className="tramvajs-text">
         <div className="container grid">
             <div className="text-center">
-                <h1 className="lg">{language === "en" ? TEXTS.en.everydayTransport : TEXTS.lv.everydayTransport}</h1>
+                <h1 className="md">{language === "en" ? TEXTS.en.everydayTransport : TEXTS.lv.everydayTransport}</h1>
             </div>
             <div className="text-left">
             <p>{language === "en" ? TEXTS.en.tramvajsText : TEXTS.lv.tramvajsText}</p>
@@ -135,7 +135,7 @@ function Road({language, id}) {
       <section className="biblioteka-text">
         <div className="container grid">
             <div className="text-center">
-                <h1 className="lg">{language === "en" ? TEXTS.en.biblTextTitle : TEXTS.lv.biblTextTitle}</h1>
+                <h1 className="md">{language === "en" ? TEXTS.en.biblTextTitle : TEXTS.lv.biblTextTitle}</h1>
             </div>
             <div className="text-left">
             <p>{language === "en" ? TEXTS.en.libraryText : TEXTS.lv.libraryText}</p>
@@ -155,7 +155,7 @@ function Road({language, id}) {
       <section className="universitate-text">
         <div className="container grid">
             <div className="text-center">
-                <h1 className="lg">{language === "en" ? TEXTS.en.destination : TEXTS.lv.destination}</h1>
+                <h1 className="md">{language === "en" ? TEXTS.en.destination : TEXTS.lv.destination}</h1>
             </div>
             <div className="text-left">
             <p>{language === "en" ? TEXTS.en.uniText : TEXTS.lv.uniText}</p>

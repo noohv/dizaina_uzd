@@ -251,6 +251,9 @@ a {
 
 .liepaja-text .grid { 
   grid-template-columns: 1fr 2fr;
+  height: 100%;
+  gap: 50px;
+  margin: 100px 0;
 }
 
 /* Grobina */
@@ -269,6 +272,9 @@ a {
 
 .grobina-text .grid { 
   grid-template-columns: 1fr 2fr;
+  height: 100%;
+  gap: 50px;
+  margin: 100px 0;
 }
 
 /* Saldus */
@@ -291,6 +297,9 @@ a {
 
 .saldus-text .grid { 
   grid-template-columns: 1fr 2fr;
+  height: 100%;
+  gap: 50px;
+  margin: 100px 0;
 }
 
 /* Rīga */
@@ -309,6 +318,9 @@ a {
 
 .riga-text .grid { 
   grid-template-columns: 1fr 2fr;
+  height: 100%;
+  gap: 50px;
+  margin: 100px 0;
 }
 
 /* Tramvajs */
@@ -327,6 +339,9 @@ a {
 
 .tramvajs-text .grid { 
   grid-template-columns: 1fr 2fr;
+  height: 100%;
+  gap: 50px;
+  margin: 100px 0;
 }
 
 /* Biblioteka */
@@ -345,6 +360,9 @@ a {
 
 .biblioteka-text .grid { 
   grid-template-columns: 1fr 2fr;
+  height: 100%;
+  gap: 50px;
+  margin: 100px 0;
 }
 
 /* Universitate */
@@ -363,6 +381,9 @@ a {
 
 .universitate-text .grid { 
   grid-template-columns: 1fr 2fr;
+  height: 100%;
+  gap: 50px;
+  margin: 100px 0;
 }
 
 
@@ -370,7 +391,7 @@ a {
 /* Footer */
 footer {
   width: 100%;
-  height: 5rem;
+  height: 10rem;
   background-color: #201335;
   color: white;
   }
@@ -405,15 +426,59 @@ footer {
   .grid,
   .latvia .grid,
   .latvia-text .grid,
+  .liepaja-text .grid,
+  .grobina-text .grid,
+  .saldus-text .grid,
+  .riga-text .grid,
+  .tramvajs-text .grid,
+  .biblioteka-text .grid,
+  .universitate-text .grid,
   .about .grid,
   .grobina .grid,
   .saldus .grid,
   .riga .grid,
   .tramvajs .grid,
-  .biblioteka .grid,
+  .biblioteka .grid,  
   .universitate .grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    padding-top: 60px;
+  }
+
+  .latvia-text .grid,
+  .liepaja-text .grid,
+  .grobina-text .grid,
+  .saldus-text .grid,
+  .riga-text .grid,
+  .tramvajs-text .grid,
+  .biblioteka-text .grid,
+  .universitate-text .grid {
+    margin: 0;
+    gap: 0;
+    padding-top: 20px;
+  }
+
+  .xl {
+    font-size: 4rem;
+  }
+
+  .about .grid,
+  .grobina .grid,
+  .saldus .grid,
+  .riga .grid,
+  .tramvajs .grid,
+  .biblioteka .grid,  
+  .universitate .grid {
+    gap: 0;
+    padding-top: 10px;
+    overflow: hidden;
+  }
+
+  .latvia .container {
+    height: 90vh;
+  }
+  .latvia .grid {
+    padding: 0;
     padding-top: 60px;
   }
 

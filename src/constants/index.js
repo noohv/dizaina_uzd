@@ -1,5 +1,6 @@
 export const TEXTS = {
     lv: {
+        madeBy: "Veidoja Valters Hūns",
         home: "Sākums",
         road: "Ceļš",
         liepaja: "Liepāja",
@@ -46,6 +47,7 @@ export const TEXTS = {
     },
 
     en: {
+        madeBy: "Made by Valters Hūns",
         home: "Home",
         road: "Road",
         liepaja: "Liepaja",

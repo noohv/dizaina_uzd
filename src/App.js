@@ -30,7 +30,7 @@ function App() {
           <Route path="/road/biblioteka" element={<Road language={language} id="biblioteka" />} />
           <Route path="/road/universitate" element={<Road language={language} id="universitate" />} />
        </Routes>
-       <Footer />
+       <Footer language={language} />
     </> 
   )
 }
