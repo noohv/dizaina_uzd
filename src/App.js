@@ -9,7 +9,7 @@ function App() {
   const [language, setLanguage] = useState("lv")
 
   useEffect(()=>{
-    if(localStorage.getItem("lang") == null) {
+    if(localStorage.getItem("lang") === null) {
       localStorage.setItem("lang", language)
     } else {
       setLanguage(localStorage.getItem("lang"))
