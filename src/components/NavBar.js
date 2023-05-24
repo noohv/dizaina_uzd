@@ -1,14 +1,8 @@
 
 import "../App.css"
-import hambuger from"../items/menu.svg"
 import { Link } from 'react-router-dom';
-import { LANGUAGES } from "../constants";
-
 
 export function NavBar({langauge, setLanguage}) {
-
-
-
   return (
     <nav className="header">
         <input className="menu-btn" type="checkbox" id="menu-btn" />

@@ -11,7 +11,7 @@ a {
 /* header */
 
 .header {
-  background-color: #000000;
+  background-color: #201335;
   position: fixed;
   width: 100%;
   top:0;
@@ -23,9 +23,9 @@ a {
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: #000000;
+  background-color: #201335;
   opacity: 90%;
-  color: white;
+  color: #fce762;
   text-align: center;
 }
 
@@ -37,8 +37,7 @@ a {
 
 .header li a:hover,
 .header .menu-btn:hover {
-  color: pink;
-  font-weight: bold;
+  color: #fce762;
 }
 
 /* menu */
@@ -61,21 +60,11 @@ a {
   padding: 28px 15px;
   position: relative;
   user-select: none;
-  background-color: #000000;
-}
-
-.header .menu-icon {
-  cursor: pointer;
-  display: inline-block;
-  float: left;
-  padding: 28px 15px;
-  position: relative;
-  user-select: none;
-  background-color: #000000;
+  background-color: #110a1c;
 }
 
 .header .menu-icon .navicon {
-  background: #ffffff;
+  background: #fffded;
   display: block;
   height: 4px;
   position: relative;
@@ -85,7 +74,7 @@ a {
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-  background: #ffffff;
+  background: #fffded;
   content: '';
   display: block;
   height: 100%;
@@ -129,6 +118,135 @@ a {
   top: 0;
 }
 
+
+/* Utilities */
+
+.container {
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Text sizes */
+.lead {
+  font-size: 20px;
+}
+
+.sm {
+  font-size: 1rem;
+}
+
+.md {
+  font-size: 2rem;
+}
+
+.lg {
+  font-size: 3rem;
+}
+
+.xl {
+  font-size: 4rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+
+
+/* Main Page */
+
+.mainPage { 
+  position: relative;
+  min-height: 100vh;
+}
+
+.latvia {
+  background-color: #fce762;
+}
+
+.latvia .grid {
+  grid-template-columns: 3fr 4fr;
+  gap: 10px;
+}
+
+.latvia img {
+  height: auto;
+  width: 100%;
+}
+
+/* Website text */
+
+.latvia-text .grid {
+  grid-template-columns: 1fr 2fr;
+  height: 100%;
+  gap: 50px;
+  margin: 100px 0;
+}
+
+/* About me */
+
+.about .grid {
+  grid-template-columns: 1.5fr 1fr 2fr;
+  height: 100%;
+  gap: 50px;
+  margin: 100px 0;
+}
+
+.about img {
+  height: auto;
+  width: 100%;
+}
+
+/* Road Page */
+
+.roadPage {
+  position: relative;
+  min-height: 100vh;
+}
+
+.liepaja .container {
+  height: 100vh;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.liepaja img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding-top: 40px;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  height: 5rem;
+  background-color: #201335;
+  color: white;
+  }
+
 @media (max-width: 600px) {
   .header {
     position: fixed;
@@ -140,5 +258,28 @@ a {
 
   .header .menu {
     width: 100%;
+  }  
+}
+
+/* Tablets and under */
+@media (max-width: 768px) {
+  .grid,
+  .latvia .grid,
+  .latvia-text .grid,
+  .about .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding-top: 60px;
   }
+
+  .latvia .grid {
+    grid-template-rows: 1fr 1.5fr;
+    gap: 0;
+  }
+
+  .latvia-text .grid {
+    gap: 10px;
+    margin: 0;
+  }
+
 }
