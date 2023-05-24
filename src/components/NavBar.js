@@ -1,29 +1,44 @@
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "../App.css"
 import { Link } from 'react-router-dom';
 import { TEXTS } from "../constants";
 
 export function NavBar({language, setLanguage}) {
 
+  const[checked, setChecked] = useState(false)
+
   const clickHandler = () => {
     if(language === "lv") {
       setLanguage("en")
+      setChecked(true)
       localStorage.setItem("lang", "en")
     } else {
       setLanguage("lv")
+      setChecked(false)
       localStorage.setItem("lang", "lv")
     }
   }
 
-  useEffect(()=>{},[language])
+  useEffect(()=>{
+    if(language === "lv") {
+      setChecked(false)
+    } else {
+      setChecked(true)
+    }
+  },[language])
 
   return (
     <nav className="header">
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label>
         <div className="menu-language">
-          <button onClick={clickHandler}>{language == "en" ? "🇱🇻" : "ENG"}</button>
+            <div class="switch">
+                <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox" checked={checked} onChange={clickHandler} />
+                <label for="language-toggle"></label>
+                <span class="on">LV</span>
+                <span class="off">EN</span>
+            </div>
         </div>
 
         <ul className="menu">
