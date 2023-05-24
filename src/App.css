@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Helvetica, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #fffded;
 }
 
 a {
@@ -225,6 +225,8 @@ a {
   min-height: 100vh;
 }
 
+/* Liepaja */
+
 .liepaja .container {
   height: 100vh;
   overflow: hidden;
@@ -237,6 +239,51 @@ a {
   height: 100%;
   object-fit: cover;
   padding-top: 40px;
+}
+
+/* Grobina */
+
+.grobina .grid {
+  grid-template-columns: 1fr 2fr;
+  height: 100%;
+  gap: 50px;
+  margin: 100px 0;
+}
+
+.grobina img {
+  height: auto;
+  width: 100%;
+}
+
+/* Saldus */
+
+.saldus { 
+  background-color: #ffb17a;
+}
+
+.saldus .grid {
+  grid-template-columns: 1fr 2fr;
+  height: 100%;
+  gap: 50px;
+  margin: 100px 0;
+}
+
+.saldus img {
+  height: auto;
+  width: 100%;
+}
+
+/* Rīga */
+.riga .grid {
+  grid-template-columns: 1fr 2fr;
+  height: 100%;
+  gap: 50px;
+  margin: 100px 0;
+}
+
+.riga img {
+  height: auto;
+  width: 100%;
 }
 
 /* Footer */
@@ -266,7 +313,9 @@ footer {
   .grid,
   .latvia .grid,
   .latvia-text .grid,
-  .about .grid {
+  .about .grid,
+  .grobina .grid,
+  .saldus .grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     padding-top: 60px;
@@ -280,6 +329,10 @@ footer {
   .latvia-text .grid {
     gap: 10px;
     margin: 0;
+  }
+
+  .saldus .container {
+    background-color: #fffded;
   }
 
 }

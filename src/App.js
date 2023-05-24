@@ -16,9 +16,11 @@ function App() {
           <Route path="/road" element={<Road language={language} id="road" />} />
           <Route path="/road/liepaja" element={<Road language={language} id="liepaja" />} />
           <Route path="/road/grobina" element={<Road language={language} id="grobina" />} />
+          <Route path="/road/saldus" element={<Road language={language} id="saldus" />} />
           <Route path="/road/riga" element={<Road language={language} />} id="riga" />
           <Route path="/road/tramvajs" element={<Road language={language} id="tramvajs" />} />
-          <Route path="/road/latvijas_universitate" element={<Road language={language} id="latvijas_universitate" />} />
+          <Route path="/road/biblioteka" element={<Road language={language} id="biblioteka" />} />
+          <Route path="/road/universitate" element={<Road language={language} id="universitate" />} />
        </Routes>
        <Footer />
     </> 

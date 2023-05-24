@@ -12,9 +12,11 @@ export function NavBar({langauge, setLanguage}) {
             <li><Link to="/road">Road</Link></li>
             <li><Link to="/road/liepaja">Liepāja</Link></li>
             <li><Link to="/road/grobina">Grobiņa</Link></li>
+            <li><Link to="/road/saldus">Saldus</Link></li>
             <li><Link to="/road/riga">Rīga</Link></li>
             <li><Link to="/road/tramvajs">Tramvajs</Link></li>
-            <li><Link to="/road/latvijas_universitate">Latvijas Universitāte</Link></li>
+            <li><Link to="/road/biblioteka">Bibliotēka</Link></li>
+            <li><Link to="/road/universitate">Universitāte</Link></li>
         </ul>
     </nav>
   )
