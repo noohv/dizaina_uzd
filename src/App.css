@@ -33,7 +33,7 @@ p {
 }
 
 input.check-toggle-round-flat:checked ~ .off {
-  color: #ffb17a;
+  color: #b97849;
 }
 
 input.check-toggle-round-flat:checked ~ .on {
@@ -43,7 +43,7 @@ input.check-toggle-round-flat:checked ~ .on {
 .switch > span.on {
   left: 0;
   padding-left: 2px;
-  color: #ffb17a;
+  color: #b97849;
 }
 
 .switch > span.off {
@@ -70,7 +70,7 @@ input.check-toggle-round-flat + label {
   padding: 2px;
   width: 97px;
   height: 35px;
-  background-color: #ffb17a;
+  background-color: #b97849;
   border-radius: 60px;
 }
 input.check-toggle-round-flat + label:before, input.check-toggle-round-flat + label:after {
@@ -84,7 +84,7 @@ input.check-toggle-round-flat + label:before {
   left: 2px;
   bottom: 2px;
   right: 2px;
-  background-color: #ffb17a;
+  background-color: #b97849;
   border-radius: 60px;
 }
 
@@ -523,6 +523,16 @@ footer {
   }  
 }
 
+.text .container {
+  padding: 0 300px;
+}
+
+@media (max-width: 1300px) {
+  .text .container {
+    padding: 0 200px;
+  }
+}
+
 @media (max-width: 1050px) {
   .latvia .grid {
     grid-template-columns: 1fr 2fr;
@@ -531,6 +541,10 @@ footer {
 
   .latvia .xxl {
     font-size: 4rem;
+  }
+
+  .text .container {
+    padding: 0 70px;
   }
 }
 
@@ -611,6 +625,10 @@ footer {
 
   .saldus .container {
     background-color: #fffded;
+  }
+
+  .text .container {
+    padding: 0 40px;
   }
 
 }

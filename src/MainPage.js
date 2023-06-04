@@ -22,7 +22,7 @@ function MainPage({language, id}) {
         </div>
       </section>
       
-      <section className="latvia-text">
+      <section className="latvia-text text">
         <div className="container grid">
             <div className="text-center">
                 <h1 className="md">{language === "en" ? TEXTS.en.aboutWebsiteTitle : TEXTS.lv.aboutWebsiteTitle}</h1>

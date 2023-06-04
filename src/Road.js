@@ -33,7 +33,7 @@ function Road({language, id}) {
         </div>
       </section>
 
-      <section className="liepaja-text">
+      <section className="liepaja-text text">
         <div className="container grid">
           <div className="text-center">
             <h1 className="md">{language === "en" ? TEXTS.en.driveStart : TEXTS.lv.driveStart}</h1>
@@ -55,7 +55,7 @@ function Road({language, id}) {
         </div>
       </section>
 
-      <section className="grobina-text">
+      <section className="grobina-text text">
         <div className="container grid">
             <div className="text-center">
                 <h1 className="md">{language === "en" ? TEXTS.en.grobinaTextTitle : TEXTS.lv.grobinaTextTitle}</h1>
@@ -76,7 +76,7 @@ function Road({language, id}) {
         </div>
       </section>
 
-      <section className="saldus-text">
+      <section className="saldus-text text">
         <div className="container grid">
             <div className="text-center">
                 <h1 className="md">{language === "en" ? TEXTS.en.halfWay : TEXTS.lv.halfWay}</h1>
@@ -97,7 +97,7 @@ function Road({language, id}) {
         </div>
       </section>
 
-      <section className="riga-text">
+      <section className="riga-text text">
         <div className="container grid">
             <div className="text-center">
                 <h1 className="md">{language === "en" ? TEXTS.en.closerDestination : TEXTS.lv.closerDestination}</h1>
@@ -117,7 +117,7 @@ function Road({language, id}) {
         </div>
       </section>
 
-      <section className="tramvajs-text">
+      <section className="tramvajs-text text">
         <div className="container grid">
             <div className="text-center">
                 <h1 className="md">{language === "en" ? TEXTS.en.everydayTransport : TEXTS.lv.everydayTransport}</h1>
@@ -137,7 +137,7 @@ function Road({language, id}) {
         </div>
       </section>
 
-      <section className="biblioteka-text">
+      <section className="biblioteka-text text">
         <div className="container grid">
             <div className="text-center">
                 <h1 className="md">{language === "en" ? TEXTS.en.biblTextTitle : TEXTS.lv.biblTextTitle}</h1>
@@ -159,7 +159,7 @@ function Road({language, id}) {
         </div>
       </section>
 
-      <section className="universitate-text">
+      <section className="universitate-text text">
         <div className="container grid">
             <div className="text-center">
                 <h1 className="md">{language === "en" ? TEXTS.en.destination : TEXTS.lv.destination}</h1>
