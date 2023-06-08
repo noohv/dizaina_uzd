@@ -104,6 +104,7 @@ function Road({language, id}) {
             </div>
             <div className="text-left">
             <p>{language === "en" ? TEXTS.en.rigaText : TEXTS.lv.rigaText}</p>
+            <p>{language === "en" ? TEXTS.en.rigaText2 : TEXTS.lv.rigaText2}</p>
             </div>
         </div>
       </section>
@@ -124,6 +125,7 @@ function Road({language, id}) {
             </div>
             <div className="text-left">
             <p>{language === "en" ? TEXTS.en.tramvajsText : TEXTS.lv.tramvajsText}</p>
+            <p>{language === "en" ? TEXTS.en.tramvajsText2 : TEXTS.lv.tramvajsText2}</p>
             </div>
         </div>
       </section>
@@ -166,6 +168,7 @@ function Road({language, id}) {
             </div>
             <div className="text-left">
             <p>{language === "en" ? TEXTS.en.uniText : TEXTS.lv.uniText}</p>
+            <p>{language === "en" ? TEXTS.en.uniText2 : TEXTS.lv.uniText2}</p>
             </div>
         </div>
       </section>

@@ -318,16 +318,16 @@ input.check-toggle-round-flat:checked + label:after {
 /* About me */
 
 .about .grid {
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
   height: 100%;
   gap: 0;
   margin: 100px 0;
-  padding: 0 100px
+  padding: 0 300px
 }
 
 .about img {
   height: auto;
-  width: 100%;
+  width: 80%;
 }
 
 
@@ -529,6 +529,10 @@ footer {
 @media (max-width: 1300px) {
   .text .container {
     padding: 0 200px;
+  }
+
+  .about .grid {
+    padding: 0 100px;
   }
 }
 

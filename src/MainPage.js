@@ -38,13 +38,13 @@ function MainPage({language, id}) {
       <section className="about">
         <div className="container grid">
             <img src={portrait} alt={language === "en" ? TEXTS.en.altPortrait : TEXTS.lv.altPortrait} />
+            
             <div className="text-center">
-                <h1 className="md">Valters Hūns</h1>
-                <h1 className="sm">{language === "en" ? TEXTS.en.aboutText : TEXTS.lv.aboutText}</h1>
+              <h1 className="md">{language === "en" ? TEXTS.en.aboutMyselfTitle : TEXTS.lv.aboutMyselfTitle}</h1>
+              <p>{language === "en" ? TEXTS.en.aboutText : TEXTS.lv.aboutText}</p>
             </div>
         </div>
       </section>
-
     </div>
   )
 }
